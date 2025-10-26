@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Entorno virtual
+djangoenv/
+venv/
+.env/
+*.pyc
+__pycache__/

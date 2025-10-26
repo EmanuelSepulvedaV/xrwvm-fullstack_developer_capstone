@@ -1,6 +1,27 @@
 <html>
 <head>
   <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .banner {
+      background: linear-gradient(135deg, #0dcaf0 0%, #17a2b8 100%);
+      color: #fff;
+      padding: 40px 30px;
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
+    .team {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      margin: 24px auto 40px auto;
+      justify-content: center;
+    }
+    .card .title { font-weight: 600; font-size: 1.1rem; }
+    .card { box-shadow: 0 4px 10px rgba(0,0,0,.08); }
+    .card img { object-fit: cover; height: 240px; }
+  </style>
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -27,42 +48,46 @@
   
     <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
       <div class="banner" name="about-header">
-      <!-- Insert header information here -->
+        <h1>About Us</h1>
+        Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
+        <p style="margin-top:12px; max-width: 60ch;">
+          Since 2005, our family-owned dealership has helped thousands of drivers find dependable vehicles with transparent pricing and friendly service. From first-time buyers to seasoned enthusiasts, our team is here to make your car purchase simple, fair, and enjoyable.
+        </p>
       </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+      <div class="team">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Sales Manager portrait">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Alex Johnson</p>
+          <p>Sales Manager</p>
+          <p class="card-text">Alex leads our sales team with a focus on listening first and matching customers with the right vehicle and budget.</p>
+          <p>alex.johnson@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Service Director portrait">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Sofia Martinez</p>
+          <p>Service Director</p>
+          <p class="card-text">Sofia ensures every vehicle meets our safety and quality standards before it reaches the lot—and long after you drive away.</p>
+          <p>sofia.martinez@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Finance Specialist portrait">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Marcus Lee</p>
+          <p>Finance Specialist</p>
+          <p class="card-text">Marcus works with a wide network of lenders to offer clear financing options with no hidden fees.</p>
+          <p>marcus.lee@example.com</p>
         </div>
       </div>
     </div>
     </div>
     </div>
-    
+
 </div>
 
 </html>
